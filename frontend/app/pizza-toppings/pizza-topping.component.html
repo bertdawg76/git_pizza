@@ -1,0 +1,8 @@
+<h2>Pizza Toppings</h2>
+<ul>
+  <li *ngFor="let topping of toppings">
+    {{topping.topping_name}} Price: {{topping.topping_price}}
+  </li>
+</ul>
+
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>

@@ -1,0 +1,25 @@
+<h2>My Order</h2>
+<form (ngSubmit)="addOrder(orderForm.value)" autocomplete="off" novalidate #orderForm="ngForm">
+
+  <fieldset>
+    <legend>Order summary</legend>
+    <div class="field">
+      <label for="sizeInput">Size</label>
+      <input type="text" id="sizeInput" name="size" ngModel>
+    </div>
+    <div class="field">
+      <label for="crustInput">Crust</label>
+      <input type="text" id="crustInput" name="crust" ngModel>
+    </div>
+    <div class="field">
+      <label for="toppingsInput">Toppings</label>
+      <input type="text" id="toppingsInput" name="toppings" ngModel>
+    </div>
+
+  </fieldset>
+
+  <p>
+    <button class="add-order" type="submit">Submit Order</button>
+  </p>
+
+</form>

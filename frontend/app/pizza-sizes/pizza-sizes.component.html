@@ -1,0 +1,8 @@
+<h2>Pizza Sizes</h2>
+<ul>
+  <li *ngFor="let size of sizes">
+    {{size.size_type}} Price: {{size.size_price}}
+  </li>
+</ul>
+
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
